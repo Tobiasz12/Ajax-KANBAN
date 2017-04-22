@@ -18,6 +18,10 @@
   text-align: center;
 }
 
+.ui-sortable {
+  min-height: 80px;
+}
+
 div .column {
   width: 250px;
   height: 500px;
