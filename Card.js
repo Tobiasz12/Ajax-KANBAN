@@ -1,4 +1,3 @@
-// KLASA KANBAN CARD
 function Card(id, name) {
 	var self = this;
 	
@@ -21,6 +20,7 @@ function Card(id, name) {
 		return card;
 	}
 }
+
 Card.prototype = {
 	removeCard: function() {
     	var self = this;

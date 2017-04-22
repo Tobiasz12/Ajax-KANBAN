@@ -1,5 +1,3 @@
-// OGÓLNA FUNKCJA
-
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
   'X-Client-Id': '1671',
@@ -11,10 +9,10 @@ $.ajaxSetup({
 });
 
 $.ajax({
-    url: baseUrl + '/board',
-    method: 'GET',
-    success: function(response) {
-      setupColumns(response.columns);  
+  url: baseUrl + '/board',
+  method: 'GET',
+  success: function(response) {
+    setupColumns(response.columns);  
     }
 });
 
@@ -29,6 +27,6 @@ function setupColumns(columns) {
 function setupCards(col, cards) {
 	cards.forEach(function (card) {
         var card = new Card(card.id, card.name, card.bootcamp_kanban_column_id);
-    	col.createCard(card);
+    	  col.createCard(card);
   	})
 }
